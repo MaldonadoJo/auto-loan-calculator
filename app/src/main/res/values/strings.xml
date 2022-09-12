@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Auto loan calc</string>
+    <string name="car_price">Car Price</string>
+    <string name="downpayment">Down Payment</string>
+    <string name="tradeIn">Trade-In Value</string>
+    <string name="loanLength">Length of loan:</string>
+    <string name="thirtysix">36</string>
+    <string name="fourtyeight">48</string>
+    <string name="sixty">60</string>
+    <string name="seventytwo">72</string>
+    <string name="loanReport">Loan Report</string>
+    <string name="APR">Annual Percentage Rate</string>
+    <string name="tax">Sales Tax</string>
+    <string name="return">Return to Data Entry</string>
+</resources>
