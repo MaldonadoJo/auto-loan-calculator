@@ -11,5 +11,8 @@
     <string name="loanReport">Loan Report</string>
     <string name="APR">Annual Percentage Rate</string>
     <string name="tax">Sales Tax</string>
-    <string name="return">Return to Data Entry</string>
+    <string name="goBack">Return to Data Entry</string>
+    <string name="estimatedPayment">Your Estimated Payment</string>
+    <string name="zeroMoneys">$0</string>
+    <string name="estSales">Estimated Sales Tax</string>
 </resources>
