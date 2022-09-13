@@ -6,6 +6,126 @@
     android:layout_height="match_parent"
     tools:context=".LoanReportActivity">
 
+    <TextView
+        android:id="@+id/txtTradeInV2"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="196dp"
+        android:fontFamily="@font/caesar_dressing"
+        android:text="@string/totLoan"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDownP" />
+
+    <TextView
+        android:id="@+id/monthP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:fontFamily="monospace"
+        android:text="@string/zeroMoneys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toEndOf="@+id/monthPay"
+        app:layout_constraintTop_toBottomOf="@+id/tradeP" />
+
+    <TextView
+        android:id="@+id/TotInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="@font/caesar_dressing"
+        android:text="@string/TotInterest"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCarP" />
+
+    <TextView
+        android:id="@+id/totalLoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/caesar_dressing"
+        android:text="@string/totloan"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/monthPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="@font/caesar_dressing"
+        android:text="@string/monthPay"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTradeInV" />
+
+    <TextView
+        android:id="@+id/downP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="monospace"
+        android:text="@string/zeroMoneys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/TotInterest"
+        app:layout_constraintTop_toBottomOf="@+id/carP" />
+
+    <TextView
+        android:id="@+id/carP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:fontFamily="monospace"
+        android:text="@string/zeroMoneys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toEndOf="@+id/totalLoan"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tradeP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:fontFamily="monospace"
+        android:text="@string/zeroMoneys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toEndOf="@+id/txtTradeInV2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tradeP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/zeroMoneys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toEndOf="@+id/txtCarP"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/taxP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="@string/zeroMoneys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toEndOf="@+id/txtCarP"
+        app:layout_constraintTop_toBottomOf="@+id/tradeP" />
+
     <Button
         android:id="@+id/btnReturn"
         android:layout_width="wrap_content"
@@ -89,7 +209,32 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/black_ops_one"
         android:text="@string/estSales"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTradeInV" />
+
+    <TextView
+        android:id="@+id/CarP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/zeroMoneys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toEndOf="@+id/txtCarP"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/downP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="@string/zeroMoneys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toEndOf="@+id/txtCarP"
+        app:layout_constraintTop_toBottomOf="@+id/CarP" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,4 +15,8 @@
     <string name="estimatedPayment">Your Estimated Payment</string>
     <string name="zeroMoneys">$0</string>
     <string name="estSales">Estimated Sales Tax</string>
+    <string name="totloan">Total Loan Amount</string>
+    <string name="TotInterest">Total interest paid</string>
+    <string name="totLoan"><![CDATA[Total loan & interest paid]]></string>
+    <string name="monthPay">Monthly payment</string>
 </resources>
