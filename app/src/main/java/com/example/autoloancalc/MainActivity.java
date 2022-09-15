@@ -43,12 +43,14 @@ public class MainActivity extends AppCompatActivity {
             double APR = Double.valueOf(txtAPR1.getText().toString());
             double salesTax = Double.valueOf(txtSalesTax1.getText().toString());
             AutoLoan loan = new AutoLoan(price,downPayment,tradeIn,length,APR,salesTax);
+            Intent intent = new Intent(this,LoanReportActivity.class);
+            intent.putExtra("loan",loan);
+            startActivity(intent);
         } catch (Exception e){
             Toast.makeText(this, "you messed something up", Toast.LENGTH_SHORT).show();
         }
 
-        Intent intent = new Intent(this,LoanReportActivity.class);
-        startActivity(intent);
+
 
     }
 }

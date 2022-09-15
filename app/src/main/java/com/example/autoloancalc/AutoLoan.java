@@ -1,6 +1,9 @@
 package com.example.autoloancalc;
 
-public class AutoLoan {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class AutoLoan implements Parcelable {
     private Double price;
     private Double downPayment;
     private Double tradeInValue;
@@ -8,6 +11,9 @@ public class AutoLoan {
     private Double rateInPercent;
     private Double taxPercent;
 
+    public AutoLoan(){
+
+    }
     public AutoLoan(Double price, Double downPayment, Double tradeInValue, Integer numMonths, Double rateInPercent, Double taxPercent) {
         this.price = price;
         this.downPayment = downPayment;
@@ -16,6 +22,97 @@ public class AutoLoan {
         this.rateInPercent = rateInPercent;
         this.taxPercent = taxPercent;
     }
+
+    protected AutoLoan(Parcel in) {
+        if (in.readByte() == 0) {
+            price = null;
+        } else {
+            price = in.readDouble();
+        }
+        if (in.readByte() == 0) {
+            downPayment = null;
+        } else {
+            downPayment = in.readDouble();
+        }
+        if (in.readByte() == 0) {
+            tradeInValue = null;
+        } else {
+            tradeInValue = in.readDouble();
+        }
+        if (in.readByte() == 0) {
+            numMonths = null;
+        } else {
+            numMonths = in.readInt();
+        }
+        if (in.readByte() == 0) {
+            rateInPercent = null;
+        } else {
+            rateInPercent = in.readDouble();
+        }
+        if (in.readByte() == 0) {
+            taxPercent = null;
+        } else {
+            taxPercent = in.readDouble();
+        }
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        if (price == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(price);
+        }
+        if (downPayment == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(downPayment);
+        }
+        if (tradeInValue == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(tradeInValue);
+        }
+        if (numMonths == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeInt(numMonths);
+        }
+        if (rateInPercent == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(rateInPercent);
+        }
+        if (taxPercent == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(taxPercent);
+        }
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<AutoLoan> CREATOR = new Creator<AutoLoan>() {
+        @Override
+        public AutoLoan createFromParcel(Parcel in) {
+            return new AutoLoan(in);
+        }
+
+        @Override
+        public AutoLoan[] newArray(int size) {
+            return new AutoLoan[size];
+        }
+    };
+
     public Double getSalesTax(){
         return price * .01 * taxPercent;
     }

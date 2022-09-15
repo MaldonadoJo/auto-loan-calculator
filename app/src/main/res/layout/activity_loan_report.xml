@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fire_whip"
     tools:context=".LoanReportActivity">
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_marginTop="196dp"
         android:fontFamily="@font/caesar_dressing"
         android:text="@string/totLoan"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDownP" />
@@ -25,6 +27,7 @@
         android:layout_marginTop="196dp"
         android:fontFamily="monospace"
         android:text="@string/zeroMoneys"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.805"
         app:layout_constraintStart_toEndOf="@+id/monthPay"
@@ -38,6 +41,7 @@
         android:layout_marginTop="208dp"
         android:fontFamily="@font/caesar_dressing"
         android:text="@string/TotInterest"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCarP" />
@@ -50,6 +54,7 @@
         android:layout_marginTop="212dp"
         android:fontFamily="@font/caesar_dressing"
         android:text="@string/totloan"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -62,42 +67,46 @@
         android:layout_marginTop="208dp"
         android:fontFamily="@font/caesar_dressing"
         android:text="@string/monthPay"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTradeInV" />
 
     <TextView
-        android:id="@+id/downP2"
+        android:id="@+id/totInter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="44dp"
         android:fontFamily="monospace"
         android:text="@string/zeroMoneys"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/TotInterest"
-        app:layout_constraintTop_toBottomOf="@+id/carP" />
+        app:layout_constraintTop_toBottomOf="@+id/totLoan" />
 
     <TextView
-        android:id="@+id/carP"
+        android:id="@+id/totLoan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
         android:fontFamily="monospace"
         android:text="@string/zeroMoneys"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.779"
         app:layout_constraintStart_toEndOf="@+id/totalLoan"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/tradeP2"
+        android:id="@+id/totLI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="304dp"
         android:fontFamily="monospace"
         android:text="@string/zeroMoneys"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.792"
         app:layout_constraintStart_toEndOf="@+id/txtTradeInV2"
@@ -110,6 +119,7 @@
         android:layout_marginTop="120dp"
         android:fontFamily="@font/bungee"
         android:text="@string/zeroMoneys"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toEndOf="@+id/txtCarP"
@@ -121,6 +131,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
         android:text="@string/zeroMoneys"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toEndOf="@+id/txtCarP"
@@ -131,8 +142,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/design_default_color_error"
         android:onClick="goDataEntry"
         android:text="@string/goBack"
+        android:textColor="@color/yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -147,7 +160,7 @@
         android:text="@string/estimatedPayment"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -175,6 +188,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/black_ops_one"
         android:text="@string/car_price"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -187,6 +201,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/black_ops_one"
         android:text="@string/downpayment"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCarP" />
@@ -199,6 +214,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/black_ops_one"
         android:text="@string/tradeIn"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDownP" />
@@ -211,6 +227,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/black_ops_one"
         android:text="@string/estSales"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTradeInV" />
@@ -222,6 +239,7 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/bungee"
         android:text="@string/zeroMoneys"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.832"
         app:layout_constraintStart_toEndOf="@+id/txtCarP"
@@ -233,6 +251,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
         android:text="@string/zeroMoneys"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toEndOf="@+id/txtCarP"
